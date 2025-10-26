@@ -1,0 +1,57 @@
+{
+  "name": "io.eframework.unity.puer",
+  "displayName": "Unity.Puer",
+  "description": "Unity.Puer 是一个基于 PuerTS 的扩展模块，提供了易用的 PuerBehaviour 组件和完整的 TypeScript 开发工作流，优化了脚本调试和自动化打包。",
+  "version": "1.0.0",
+  "unity": "2021.3",
+  "license": "MIT",
+  "author": {
+    "name": "EFramework Innovation",
+    "email": "eframework-io@outlook.com",
+    "url": "https://github.com/eframework-io"
+  },
+  "homepage": "https://eframework.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eframework-io/Unity.Puer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eframework-io/Unity.Puer/issues"
+  },
+  "keywords": [
+    "eframework",
+    "unity",
+    "puer"
+  ],
+  "files": [
+    ".puer",
+    "Editor",
+    "Editor.meta",
+    "Plugins",
+    "Plugins.meta",
+    "Runtime",
+    "Runtime.meta",
+    "Documentation~",
+    "Samples~",
+    "CHANGELOG.md",
+    "CHANGELOG.md.meta",
+    "LICENSE.md",
+    "LICENSE.md.meta",
+    "package.json",
+    "package.json.meta",
+    "README.md",
+    "README.md.meta",
+    "Third Party Notices.md",
+    "Third Party Notices.md.meta"
+  ],
+  "puerAdapter": ".puer",
+  "puerExports": [
+    "EFramework.Unity.Puer"
+  ],
+  "dependencies": {
+    "com.tencent.puerts.core": "2.2.1",
+    "com.tencent.puerts.ts-loader": "2.0.5",
+    "io.eframework.unity.utility": "1.0.0",
+    "io.eframework.unity.editor": "1.0.0"
+  }
+}

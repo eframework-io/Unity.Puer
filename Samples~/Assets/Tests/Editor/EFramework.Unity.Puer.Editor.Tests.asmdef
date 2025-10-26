@@ -1,0 +1,17 @@
+{
+    "name": "EFramework.Unity.Puer.Editor.Tests",
+    "references": [
+        "EFramework.Unity.Puer",
+        "EFramework.Unity.Utility",
+        "EFramework.Unity.Editor",
+        "com.tencent.puerts.core",
+        "com.tencent.puerts.core.Editor",
+        "EFramework.Unity.Puer.Editor"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ]
+}

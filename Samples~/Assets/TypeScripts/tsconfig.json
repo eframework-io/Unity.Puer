@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target": "ES2015",
+        "module": "ES2015",
+        "moduleResolution": "bundler",
+        "inlineSourceMap": true,
+        "experimentalDecorators": true,
+        "noImplicitAny": false,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "typeRoots": [
+            "../../Library/PackageCache/com.tencent.puerts.core/Gen/Typing",
+            "../../node_modules/@types",
+            "../Plugins/Puer/Generate/Typing"
+        ],
+        "paths": {
+            "*": [
+                "../../node_modules/*"
+            ]
+        }
+    },
+}

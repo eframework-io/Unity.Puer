@@ -1,0 +1,14 @@
+{
+    "name": "EFramework.Unity.Puer.Tests",
+    "references": [
+        "com.tencent.puerts.core",
+        "com.tencent.puerts.ts-loader",
+        "EFramework.Unity.Editor",
+        "EFramework.Unity.Utility",
+        "EFramework.Unity.Puer",
+        "EFramework.Unity.Puer.Editor"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ]
+}

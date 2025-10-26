@@ -1,0 +1,22 @@
+{
+    "name": "EFramework.Unity.Puer.Editor",
+    "rootNamespace": "",
+    "references": [
+        "EFramework.Unity.Puer",
+        "EFramework.Unity.Utility",
+        "EFramework.Unity.Editor",
+        "com.tencent.puerts.core",
+        "com.tencent.puerts.core.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,6 @@
+{
+    "name": "EFramework.Unity.Puer",
+    "module": "index.js",
+    "types": "index.d.ts",
+    "type": "module"
+}
