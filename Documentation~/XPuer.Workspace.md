@@ -5,7 +5,7 @@
 [![DeepWiki](https://img.shields.io/badge/DeepWiki-Explore-blue)](https://deepwiki.com/eframework-io/Unity.Puer)
 [![Discord](https://img.shields.io/discord/1422114598835851286?label=Discord&logo=discord)](https://discord.gg/XMPx2wXSz3)
 
-XPuer.Workspace 是 TypeScript 的项目管理模块，用于源文件的解析和多编辑器集成。
+用于源文件的解析和多编辑器集成，是 TypeScript 的项目管理模块。
 
 ## 功能特性
 

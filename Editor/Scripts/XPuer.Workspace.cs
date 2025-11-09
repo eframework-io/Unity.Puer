@@ -15,7 +15,7 @@ namespace EFramework.Unity.Puer.Editor
     public partial class XPuer
     {
         /// <summary>
-        /// XPuer.Workspace 是 TypeScript 的项目管理模块，用于源文件的解析和多编辑器集成。
+        /// XPuer.Workspace 用于源文件的解析和多编辑器集成，是 TypeScript 的项目管理模块。
         /// </summary>
         /// <remarks>
         /// <code>

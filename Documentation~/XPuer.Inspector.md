@@ -5,7 +5,7 @@
 [![DeepWiki](https://img.shields.io/badge/DeepWiki-Explore-blue)](https://deepwiki.com/eframework-io/Unity.Puer)
 [![Discord](https://img.shields.io/discord/1422114598835851286?label=Discord&logo=discord)](https://discord.gg/XMPx2wXSz3)
 
-XPuer.Inspector 实现了 PuerBehaviour 组件的检视器界面，用于组件的可视化编辑和类型检查。
+实现了 PuerBehaviour 组件的检视器界面，用于组件的可视化编辑和类型检查。
 
 ## 功能特性
 

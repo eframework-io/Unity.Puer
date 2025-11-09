@@ -9,15 +9,15 @@
 
 ## 功能特性
 
-- [XPuer.Core](Documentation~/XPuer.Core.md) 提供了 JavaScript 虚拟机的运行时环境，支持事件系统管理、生命周期控制和脚本调试等功能
-- [XPuer.Behaviour](Documentation~/XPuer.Behaviour.md) 提供了 MonoBehaviour 的 TypeScript 扩展实现，用于管理组件的生命周期、序列化和事件系统
-- [XPuer.Constants](Documentation~/XPuer.Constants.md) 提供了一些常量定义和运行时环境控制，包括运行配置、资源路径和标签生成等功能
-- [XPuer.Preferences](Documentation~/XPuer.Preferences.md) 提供了运行时的首选项管理，用于控制运行模式、调试选项和资源路径等配置项
-- [XPuer.Inspector](Documentation~/XPuer.Inspector.md) 实现了 PuerBehaviour 组件的检视器界面，用于组件的可视化编辑和类型检查
-- [XPuer.Builder](Documentation~/XPuer.Builder.md) 提供了脚本的构建工作流，支持 TypeScript 脚本的编译及打包功能
-- [XPuer.Publisher](Documentation~/XPuer.Publisher.md) 实现了脚本包的发布工作流，用于将打包好的脚本发布至存储服务中
-- [XPuer.Generator](Documentation~/XPuer.Generator.md) 提供了代码生成工具，支持 PuerTS 绑定代码的生成、模块导出和自动安装等功能
-- [XPuer.Workspace](Documentation~/XPuer.Workspace.md) 是 TypeScript 的项目管理模块，用于源文件的解析和多编辑器集成
+- [XPuer.Core](Documentation~/XPuer.Core.md) 提供了 JavaScript 虚拟机的运行时环境，支持事件系统管理、生命周期控制和脚本调试等功能。
+- [XPuer.Behaviour](Documentation~/XPuer.Behaviour.md) 提供了 MonoBehaviour 的 TypeScript 扩展实现，用于管理组件的生命周期、序列化和事件系统。
+- [XPuer.Constants](Documentation~/XPuer.Constants.md) 提供了一些常量定义和运行时环境控制，包括运行配置、资源路径和标签生成等功能。
+- [XPuer.Preferences](Documentation~/XPuer.Preferences.md) 提供了运行时的首选项管理，用于控制运行模式、调试选项和资源路径等配置项。
+- [XPuer.Inspector](Documentation~/XPuer.Inspector.md) 实现了 PuerBehaviour 组件的检视器界面，用于组件的可视化编辑和类型检查。
+- [XPuer.Builder](Documentation~/XPuer.Builder.md) 提供了脚本的构建工作流，支持 TypeScript 脚本的编译及打包功能。
+- [XPuer.Publisher](Documentation~/XPuer.Publisher.md) 实现了脚本包的发布工作流，用于将打包好的脚本发布至存储服务中。
+- [XPuer.Generator](Documentation~/XPuer.Generator.md) 提供了代码生成工具，支持 PuerTS 绑定代码的生成、模块导出和自动安装等功能。
+- [XPuer.Workspace](Documentation~/XPuer.Workspace.md) 用于源文件的解析和多编辑器集成，是 TypeScript 的项目管理模块。
 
 ## 常见问题
 
