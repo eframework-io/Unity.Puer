@@ -1,11 +1,11 @@
-# Unity.Puer
+# EFramework Puer for Unity
 
 [![NPM](https://img.shields.io/npm/v/io.eframework.unity.puer?label=NPM&logo=npm)](https://www.npmjs.com/package/io.eframework.unity.puer)
 [![UPM](https://img.shields.io/npm/v/io.eframework.unity.puer?label=UPM&logo=unity&registry_uri=https://package.openupm.com)](https://openupm.com/packages/io.eframework.unity.puer)
 [![DeepWiki](https://img.shields.io/badge/DeepWiki-Explore-blue)](https://deepwiki.com/eframework-io/Unity.Puer)
 [![Discord](https://img.shields.io/discord/1422114598835851286?label=Discord&logo=discord)](https://discord.gg/XMPx2wXSz3)
 
-Unity.Puer 是一个基于 PuerTS 的扩展模块，提供了易用的 PuerBehaviour 组件和完整的 TypeScript 开发工作流，优化了脚本调试和自动化打包。
+基于 PuerTS 的扩展模块，提供了易用的 PuerBehaviour 组件和完整的 TypeScript 开发工作流，优化了脚本调试和自动化打包。
 
 ## 功能特性
 
