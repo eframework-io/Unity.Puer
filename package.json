@@ -2,7 +2,7 @@
   "name": "io.eframework.unity.puer",
   "displayName": "EFramework Puer for Unity",
   "description": "基于 PuerTS 的扩展模块，提供了易用的 PuerBehaviour 组件和完整的 TypeScript 开发工作流，优化了脚本调试和自动化打包。",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "unity": "2021.3",
   "license": "MIT",
   "author": {
