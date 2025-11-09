@@ -189,7 +189,7 @@ namespace EFramework.Unity.Puer.Editor
                 /// <summary>
                 /// Output 是代码生成输出路径的配置键。
                 /// </summary>
-                public const string Output = "Puer/Generator/Output@Editor";
+                public const string Output = "XPuer/Generator/Output@Editor";
 
                 /// <summary>
                 /// OutputDefault 是代码生成输出路径的默认值。
@@ -199,7 +199,7 @@ namespace EFramework.Unity.Puer.Editor
                 /// <summary>
                 /// AutoBinding 是自动生成绑定的配置键。
                 /// </summary>
-                public const string AutoBinding = "Puer/Generator/Auto/Binding@Editor";
+                public const string AutoBinding = "XPuer/Generator/Auto/Binding@Editor";
 
                 /// <summary>
                 /// AutoBindingDefault 是自动生成绑定的默认值。
@@ -209,21 +209,21 @@ namespace EFramework.Unity.Puer.Editor
                 /// <summary>
                 /// AutoInstall 是自动安装依赖的配置键。
                 /// </summary>
-                public const string AutoInstall = "Puer/Generator/Auto/Install@Editor";
+                public const string AutoInstall = "XPuer/Generator/Auto/Install@Editor";
 
                 /// <summary>
                 /// AutoInstallDefault 是自动安装依赖的默认值。
                 /// </summary>
                 public const bool AutoInstallDefault = true;
 
-                public override string Section => "Puer";
+                public override string Section => "XPuer";
 
                 public override int Priority => 303;
 
                 public override void OnVisualize(string searchContext, XPrefs.IBase context)
                 {
                     EditorGUILayout.BeginVertical(EditorStyles.helpBox);
-                    foldout = EditorGUILayout.Foldout(foldout, new GUIContent("Generator", "Puer Generator Options."));
+                    foldout = EditorGUILayout.Foldout(foldout, new GUIContent("Generator", "XPuer Generator Options."));
                     if (foldout)
                     {
                         EditorGUILayout.BeginVertical(EditorStyles.helpBox);

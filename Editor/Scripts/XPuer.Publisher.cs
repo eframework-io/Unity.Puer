@@ -85,7 +85,7 @@ namespace EFramework.Unity.Puer.Editor
         /// 
         /// 更多信息请参考模块文档。
         /// </remarks>
-        [XEditor.Tasks.Worker(name: "Publish Scripts", group: "Puer", runasync: true, priority: 302)]
+        [XEditor.Tasks.Worker(name: "Publish Scripts", group: "XPuer", runasync: true, priority: 302)]
         public class Publisher : XEditor.MinIO, XEditor.Tasks.Panel.IOnGUI
         {
             /// <summary>
@@ -97,7 +97,7 @@ namespace EFramework.Unity.Puer.Editor
                 /// <summary>
                 /// Endpoint 是存储服务地址的键名。
                 /// </summary>
-                public const string Endpoint = "Puer/Publisher/Endpoint@Editor";
+                public const string Endpoint = "XPuer/Publisher/Endpoint@Editor";
 
                 /// <summary>
                 /// EndpointDefault 是存储服务地址的默认值。
@@ -107,7 +107,7 @@ namespace EFramework.Unity.Puer.Editor
                 /// <summary>
                 /// Bucket 是存储分区名称的键名。
                 /// </summary>
-                public const string Bucket = "Puer/Publisher/Bucket@Editor";
+                public const string Bucket = "XPuer/Publisher/Bucket@Editor";
 
                 /// <summary>
                 /// BucketDefault 是存储分区名称的默认值。
@@ -117,7 +117,7 @@ namespace EFramework.Unity.Puer.Editor
                 /// <summary>
                 /// Access 是存储服务凭证的键名。
                 /// </summary>
-                public const string Access = "Puer/Publisher/Access@Editor";
+                public const string Access = "XPuer/Publisher/Access@Editor";
 
                 /// <summary>
                 /// AccessDefault 是存储服务凭证的默认值。
@@ -127,14 +127,14 @@ namespace EFramework.Unity.Puer.Editor
                 /// <summary>
                 /// Secret 是存储服务密钥的键名。
                 /// </summary>
-                public const string Secret = "Puer/Publisher/Secret@Editor";
+                public const string Secret = "XPuer/Publisher/Secret@Editor";
 
                 /// <summary>
                 /// SecretDefault 是存储服务密钥的默认值。
                 /// </summary>
                 public const string SecretDefault = "${Environment.StorageSecret}";
 
-                public override string Section => "Puer";
+                public override string Section => "XPuer";
 
                 public override int Priority => 302;
 
@@ -145,7 +145,7 @@ namespace EFramework.Unity.Puer.Editor
                     if (!taskPanel)
                     {
                         EditorGUILayout.BeginVertical(EditorStyles.helpBox);
-                        foldout = EditorGUILayout.Foldout(foldout, new GUIContent("Publisher", "Puer Publish Options."));
+                        foldout = EditorGUILayout.Foldout(foldout, new GUIContent("Publisher", "XPuer Publisher Options."));
                     }
                     else foldout = true;
                     if (foldout)

@@ -141,7 +141,7 @@ namespace EFramework.Unity.Puer.Editor
                 /// Path 是源文件路径的配置键。
                 /// 用于在编辑器中存储源文件根目录路径。
                 /// </summary>
-                public const string Path = "Puer/Project/Path@Editor";
+                public const string Path = "XPuer/Project/Path@Editor";
 
                 /// <summary>
                 /// PathDefault 是源文件路径的默认值。
@@ -153,7 +153,7 @@ namespace EFramework.Unity.Puer.Editor
                 /// Tool 是编辑器工具的配置键。
                 /// 用于在编辑器中存储选择的编辑器类型。
                 /// </summary>
-                public const string Tool = "Puer/Project/Tool@Editor";
+                public const string Tool = "XPuer/Project/Tool@Editor";
 
                 /// <summary>
                 /// ToolDefault 是编辑器工具的默认值。
@@ -166,7 +166,7 @@ namespace EFramework.Unity.Puer.Editor
                 public override void OnVisualize(string searchContext, XPrefs.IBase context)
                 {
                     EditorGUILayout.BeginVertical(EditorStyles.helpBox);
-                    foldout = EditorGUILayout.Foldout(foldout, new GUIContent("Workspace", "Puer Project Options."));
+                    foldout = EditorGUILayout.Foldout(foldout, new GUIContent("Workspace", "XPuer Workspace Options."));
                     if (foldout)
                     {
                         EditorGUILayout.BeginVertical(EditorStyles.helpBox);

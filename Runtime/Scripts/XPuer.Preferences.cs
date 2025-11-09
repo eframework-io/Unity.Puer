@@ -52,7 +52,7 @@ namespace EFramework.Unity.Puer
             /// ReleaseMode 是发布模式的配置键。
             /// 用于控制是否启用发布模式。
             /// </summary>
-            public const string ReleaseMode = "Puer/ReleaseMode";
+            public const string ReleaseMode = "XPuer/ReleaseMode";
 
             /// <summary>
             /// ReleaseModeDefault 是发布模式的默认值。
@@ -64,7 +64,7 @@ namespace EFramework.Unity.Puer
             /// DebugMode 是调试模式的配置键。
             /// 用于控制是否启用调试模式。
             /// </summary>
-            public const string DebugMode = "Puer/DebugMode";
+            public const string DebugMode = "XPuer/DebugMode";
 
             /// <summary>
             /// DebugModeDefault 是调试模式的默认值。
@@ -76,7 +76,7 @@ namespace EFramework.Unity.Puer
             /// DebugWait 是调试等待的配置键。
             /// 用于控制是否等待调试器连接。
             /// </summary>
-            public const string DebugWait = "Puer/DebugWait";
+            public const string DebugWait = "XPuer/DebugWait";
 
             /// <summary>
             /// DebugWaitDefault 是调试等待的默认值。
@@ -88,7 +88,7 @@ namespace EFramework.Unity.Puer
             /// DebugPort 是调试端口的配置键。
             /// 用于设置调试器连接的端口号。
             /// </summary>
-            public const string DebugPort = "Puer/DebugPort";
+            public const string DebugPort = "XPuer/DebugPort";
 
             /// <summary>
             /// DebugPortDefault 是调试端口的默认值。
@@ -100,7 +100,7 @@ namespace EFramework.Unity.Puer
             /// AssetUri 是资源 URI 的配置键。
             /// 用于设置脚本资源的打包路径。
             /// </summary>
-            public const string AssetUri = "Puer/AssetUri";
+            public const string AssetUri = "XPuer/AssetUri";
 
             /// <summary>
             /// AssetUriDefault 是资源 URI 的默认值。
@@ -112,7 +112,7 @@ namespace EFramework.Unity.Puer
             /// LocalUri 是本地 URI 的配置键。
             /// 用于设置脚本资源的本地路径。
             /// </summary>
-            public const string LocalUri = "Puer/LocalUri";
+            public const string LocalUri = "XPuer/LocalUri";
 
             /// <summary>
             /// LocalUriDefault 是本地 URI 的默认值。
@@ -124,16 +124,16 @@ namespace EFramework.Unity.Puer
             /// RemoteUri 是远端 URI 的配置键。
             /// 用于设置脚本资源的远端路径。
             /// </summary>
-            public const string RemoteUri = "Puer/RemoteUri";
+            public const string RemoteUri = "XPuer/RemoteUri";
 
             /// <summary>
             /// RemoteUriDefault 是远端 URI 的默认值。
             /// </summary>
             public const string RemoteUriDefault = "Builds/Patch/${Environment.Author}/${Environment.Version}/${Environment.Platform}/Scripts/TS";
 
-            public virtual string Section => "Puer";
+            public virtual string Section => "XPuer";
 
-            public virtual string Tooltip => "Preferences of Puer.";
+            public virtual string Tooltip => "Preferences of XPuer.";
 
             public virtual int Priority => 300;
 

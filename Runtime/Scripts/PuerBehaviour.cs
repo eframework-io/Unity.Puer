@@ -87,7 +87,7 @@ namespace EFramework.Unity.Puer
     /// </code>
     /// 更多信息请参考模块文档。
     /// </remarks>
-    [AddComponentMenu("Puer/Puer Behaviour")]
+    [AddComponentMenu("PuerTS/Puer Behaviour")]
     public class PuerBehaviour : MonoBehaviour
     {
         #region 数据结构定义

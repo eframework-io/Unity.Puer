@@ -63,7 +63,7 @@ namespace EFramework.Unity.Puer.Editor
         /// </code>
         /// 更多信息请参考模块文档。
         /// </remarks>
-        [XEditor.Tasks.Worker(name: "Build Scripts", group: "Puer", priority: 301)]
+        [XEditor.Tasks.Worker(name: "Build Scripts", group: "XPuer", priority: 301)]
         public class Builder : XEditor.Tasks.Worker,
             XEditor.Tasks.Panel.IOnGUI,
             XEditor.Event.Internal.OnPreprocessBuild,
@@ -78,7 +78,7 @@ namespace EFramework.Unity.Puer.Editor
                 /// Input 是输入路径的配置键。
                 /// 用于设置脚本源文件的路径。
                 /// </summary>
-                public const string Input = "Puer/Builder/Input@Editor";
+                public const string Input = "XPuer/Builder/Input@Editor";
 
                 /// <summary>
                 /// InputDefault 是输入路径的默认值。
@@ -90,7 +90,7 @@ namespace EFramework.Unity.Puer.Editor
                 /// Output 是输出路径的配置键。
                 /// 用于设置构建输出的路径。
                 /// </summary>
-                public const string Output = "Puer/Builder/Output@Editor";
+                public const string Output = "XPuer/Builder/Output@Editor";
 
                 /// <summary>
                 /// OutputDefault 是输出路径的默认值。
@@ -102,7 +102,7 @@ namespace EFramework.Unity.Puer.Editor
                 /// Tasks 是任务列表的配置键。
                 /// 用于设置构建过程中需要执行的任务。
                 /// </summary>
-                public const string Tasks = "Puer/Builder/Tasks@Editor";
+                public const string Tasks = "XPuer/Builder/Tasks@Editor";
 
                 /// <summary>
                 /// TasksDefault 是任务列表的默认值。
@@ -110,7 +110,7 @@ namespace EFramework.Unity.Puer.Editor
                 /// </summary>
                 public static readonly string[] TasksDefault = new string[] { "build-modules", "build-sources" };
 
-                public override string Section => "Puer";
+                public override string Section => "XPuer";
 
                 public override int Priority => 301;
 
@@ -127,7 +127,7 @@ namespace EFramework.Unity.Puer.Editor
                     if (!taskPanel)
                     {
                         EditorGUILayout.BeginVertical(EditorStyles.helpBox);
-                        foldout = EditorGUILayout.Foldout(foldout, new GUIContent("Builder", "Puer Build Options."));
+                        foldout = EditorGUILayout.Foldout(foldout, new GUIContent("Builder", "XPuer Builder Options."));
                     }
                     else foldout = true;
                     if (foldout)
