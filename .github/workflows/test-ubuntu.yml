@@ -110,11 +110,13 @@ jobs:
           FROM unityci/editor:ubuntu-${{ matrix.unityVersion }}-linux-il2cpp-3
 
           # 安装 Node.js 依赖
-          RUN apt-get update && \\
-              apt-get install -y curl ca-certificates && \\
+          RUN export DEBIAN_FRONTEND=noninteractive && \\
+              apt-get update && \\
+              apt-get install -y --no-install-recommends curl ca-certificates && \\
+              curl -fsSL https://deb.nodesource.com/setup_22.x | bash - && \\
+              apt-get install -y --no-install-recommends nodejs && \\
+              apt-get clean && \\
               rm -rf /var/lib/apt/lists/* && \\
-              curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \\
-              apt-get install -y nodejs && \\
               node --version && \\
               npm --version
 
