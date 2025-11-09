@@ -21,7 +21,7 @@ public class TestXPuerConstants
         var result = XPuer.Constants.GenTag(path);
 
         // 验证标签是否正确
-        Assert.AreEqual(expected, result, "GenTag应返回正确的标签名称");
+        Assert.That(result, Is.EqualTo(expected), "GenTag应返回正确的标签名称");
     }
 
     [TestCase(true, true)]
@@ -34,8 +34,8 @@ public class TestXPuerConstants
         XPuer.Constants.releaseMode = releaseMode;
         XPuer.Constants.debugMode = debugMode;
 
-        Assert.AreEqual(releaseMode, XPuer.Constants.ReleaseMode, "ReleaseMode属性应与设置的值一致");
-        Assert.AreEqual(debugMode, XPuer.Constants.DebugMode, "DebugMode属性应与设置的值一致");
+        Assert.That(XPuer.Constants.ReleaseMode, Is.EqualTo(releaseMode), "ReleaseMode属性应与设置的值一致");
+        Assert.That(XPuer.Constants.DebugMode, Is.EqualTo(debugMode), "DebugMode属性应与设置的值一致");
     }
 
     [Test]
@@ -47,7 +47,7 @@ public class TestXPuerConstants
         XPuer.Constants.bLocalPath = true;
         XPuer.Constants.localPath = localPath;
 
-        Assert.AreEqual(localPath, XPuer.Constants.LocalPath, "LocalPath属性应与设置的路径一致");
+        Assert.That(XPuer.Constants.LocalPath, Is.EqualTo(localPath), "LocalPath属性应与设置的路径一致");
 
         // 恢复本地路径
         XPuer.Constants.localPath = originLocalPath;
@@ -57,10 +57,10 @@ public class TestXPuerConstants
     public void Escape()
     {
         // 测试排除字符
-        Assert.AreEqual("_", XPuer.Constants.escapeChars["_"], "下划线应映射为下划线。");
-        Assert.AreEqual("", XPuer.Constants.escapeChars[" "], "空格应映射为空字符串。");
-        Assert.AreEqual("", XPuer.Constants.escapeChars["#"], "井号应映射为空字符串。");
-        Assert.AreEqual("", XPuer.Constants.escapeChars["["], "左方括号应映射为空字符串。");
-        Assert.AreEqual("", XPuer.Constants.escapeChars["]"], "右方括号应映射为空字符串。");
+        Assert.That(XPuer.Constants.escapeChars["_"], Is.EqualTo("_"), "下划线应映射为下划线。");
+        Assert.That(XPuer.Constants.escapeChars[" "], Is.EqualTo(""), "空格应映射为空字符串。");
+        Assert.That(XPuer.Constants.escapeChars["#"], Is.EqualTo(""), "井号应映射为空字符串。");
+        Assert.That(XPuer.Constants.escapeChars["["], Is.EqualTo(""), "左方括号应映射为空字符串。");
+        Assert.That(XPuer.Constants.escapeChars["]"], Is.EqualTo(""), "右方括号应映射为空字符串。");
     }
 }

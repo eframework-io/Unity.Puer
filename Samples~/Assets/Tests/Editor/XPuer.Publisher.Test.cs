@@ -25,7 +25,7 @@ public class TestXPuerPublisher
         var buildDir = XFile.PathJoin(XPrefs.GetString(Builder.Preferences.Output, Builder.Preferences.OutputDefault), XPrefs.GetString(XEnv.Preferences.Channel, XEnv.Preferences.ChannelDefault), XEnv.Platform.ToString());
         if (XFile.HasDirectory(XPuer.Constants.LocalPath)) XFile.DeleteDirectory(XPuer.Constants.LocalPath);
         XFile.CopyDirectory(buildDir, XPuer.Constants.LocalPath);
-        Assert.IsTrue(XFile.HasDirectory(XPuer.Constants.LocalPath));
+        Assert.That(XFile.HasDirectory(XPuer.Constants.LocalPath), Is.True, "本地路径应当存在。");
 
         // 设置测试环境
         XPrefs.Asset.Set(Publisher.Preferences.Endpoint, "http://localhost:9000");
@@ -43,16 +43,16 @@ public class TestXPuerPublisher
         var report = XEditor.Tasks.Execute(handler);
 
         // 验证Result
-        Assert.AreEqual(report.Result, XEditor.Tasks.Result.Succeeded, "脚本发布应当成功");
+        Assert.That(report.Result, Is.EqualTo(XEditor.Tasks.Result.Succeeded), "脚本发布应当成功");
 
         var manifestUrl = $"{XPrefs.Asset.GetString(Publisher.Preferences.Endpoint)}/{XPrefs.Asset.GetString(Publisher.Preferences.Bucket)}/{XPrefs.Asset.GetString(Publisher.Preferences.RemoteUri)}/{XMani.Default}";
         var req = UnityWebRequest.Get(manifestUrl);
         req.timeout = 10;
         req.SendWebRequest();
         while (!req.isDone) { }
-        Assert.IsTrue(req.responseCode == 200, "资源清单应当请求成功");
+        Assert.That(req.responseCode, Is.EqualTo(200), "资源清单应当请求成功");
 
         var manifest = new XMani.Manifest();
-        Assert.IsTrue(manifest.Parse(req.downloadHandler.text, out _), "资源清单应当读取成功");
+        Assert.That(manifest.Parse(req.downloadHandler.text, out _), Is.True, "资源清单应当读取成功");
     }
 }

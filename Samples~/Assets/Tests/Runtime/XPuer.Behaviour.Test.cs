@@ -147,37 +147,37 @@ public class TestXPuerBehaviour
 
             // 测试Root
             result = PuerBehaviour.InternalGets(root, myComponent, depth, true);
-            Assert.AreEqual(rootResult, result.Length);
+            Assert.That(result.Length, Is.EqualTo(rootResult));
 
             // 测试Child1
             result = PuerBehaviour.InternalGets(child1, myComponent, depth, true);
-            Assert.AreEqual(child1Result, result.Length);
+            Assert.That(result.Length, Is.EqualTo(child1Result));
 
             // 测试GrandChild
             result = PuerBehaviour.InternalGets(grandChild, myComponent, depth, true);
-            Assert.AreEqual(grandChildResult, result.Length);
+            Assert.That(result.Length, Is.EqualTo(grandChildResult));
 
             // 测试Child2
             result = PuerBehaviour.InternalGets(child2, myComponent, depth, true);
-            Assert.AreEqual(child2Result, result.Length);
+            Assert.That(result.Length, Is.EqualTo(child2Result));
 
             // 测试includeInactive参数
             child1.SetActive(false);
 
             // 使用includeInactive=false
             result = PuerBehaviour.InternalGets(root, myComponent, depth, false);
-            if (depth == 0) Assert.AreEqual(1, result.Length, "includeInactive=false时，当前节点查询结果不受影响");
-            else if (depth == -1) Assert.AreEqual(1, result.Length, "includeInactive=false时，父节点查询不应包含非激活节点");
-            else if (depth == 1) Assert.IsTrue(result.Length < 4, "includeInactive=false时，子节点查询不应包含非激活节点");
+            if (depth == 0) Assert.That(result.Length, Is.EqualTo(1), "includeInactive=false时，当前节点查询结果不受影响");
+            else if (depth == -1) Assert.That(result.Length, Is.EqualTo(1), "includeInactive=false时，父节点查询不应包含非激活节点");
+            else if (depth == 1) Assert.That(result.Length, Is.LessThan(4), "includeInactive=false时，子节点查询不应包含非激活节点");
 
             // 测试空参数
             LogAssert.Expect(LogType.Error, new Regex(@".*error caused by nil root."));
             result = PuerBehaviour.InternalGets(null, myComponent, depth, true);
-            Assert.IsNull(result, "传入空对象时应返回null");
+            Assert.That(result, Is.Null, "传入空对象时应返回null");
 
             LogAssert.Expect(LogType.Error, new Regex(@".*error caused by nil type."));
             result = PuerBehaviour.InternalGets(root, null, depth, true);
-            Assert.IsNull(result, "传入空类型时应返回null");
+            Assert.That(result, Is.Null, "传入空类型时应返回null");
         }
         finally
         {

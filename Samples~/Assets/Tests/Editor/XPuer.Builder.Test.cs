@@ -23,18 +23,18 @@ public class TestXPuerBuilder : IPrebuildSetup
 
         var report = XEditor.Tasks.Execute(handler);
 
-        Assert.AreEqual(XEditor.Tasks.Result.Succeeded, report.Result, "资源构建应当成功");
-        Assert.IsTrue(XFile.HasFile(manifestFile), "资源清单应当生成成功");
+        Assert.That(XEditor.Tasks.Result.Succeeded, Is.EqualTo(report.Result), "资源构建应当成功");
+        Assert.That(XFile.HasFile(manifestFile), Is.True, "资源清单应当生成成功");
 
         var manifest = new XMani.Manifest();
-        Assert.IsTrue(manifest.Read(manifestFile)(), "资源清单应当读取成功");
+        Assert.That(manifest.Read(manifestFile)(), Is.True, "资源清单应当读取成功");
 
         foreach (var file in manifest.Files)
         {
             var path = XFile.PathJoin(buildDir, file.Name);
-            Assert.IsTrue(XFile.HasFile(path), "文件应当存在于本地：" + file.Name);
-            Assert.AreEqual(XFile.FileMD5(path), file.MD5, "文件MD5应当一致：" + file.Name);
-            Assert.AreEqual(XFile.FileSize(path), file.Size, "文件大小应当一致：" + file.Name);
+            Assert.That(XFile.HasFile(path), Is.True, "文件应当存在于本地：" + file.Name);
+            Assert.That(XFile.FileMD5(path), Is.EqualTo(file.MD5), "文件MD5应当一致：" + file.Name);
+            Assert.That(XFile.FileSize(path), Is.EqualTo(file.Size), "文件大小应当一致：" + file.Name);
         }
     }
 
